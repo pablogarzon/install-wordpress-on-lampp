@@ -26,6 +26,9 @@ mv $DIR/wordpress opt/lampp/htdocs/$SITE
 /opt/lampp/bin/mysql -u$DB_USER -p$DB_PASSWORD -e"create database if not exists ${DB_NAME}"
 
 ### ftp settings
-echo "define('FTP_USER', 'YOUR-FTP-USER');" >> opt/lampp/htdocs/$SITE/wp-config.php	#by default should be daemon
-echo "define('FTP_HOST', 'localhost');" >> opt/lampp/htdocs/$SITE/wp-config.php 	#by default should be localhost
-echo "define('FTP_PASS', 'YOUR-PASS');" >> opt/lampp/htdocs/$SITE/wp-config.php		#by default should be empty
+### by default FTP_USER should be daemon
+### by default FTP_HOST should be localhost
+### by default FTP_PASS should be empty
+#echo "define('FTP_USER', 'YOUR-FTP-USER');" >> opt/lampp/htdocs/$SITE/wp-config.php
+#echo "define('FTP_HOST', 'localhost');" >> opt/lampp/htdocs/$SITE/wp-config.php 	
+#echo "define('FTP_PASS', 'YOUR-PASS');" >> opt/lampp/htdocs/$SITE/wp-config.php
